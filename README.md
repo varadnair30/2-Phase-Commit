@@ -2,7 +2,7 @@
 A distributed transaction concurrency control protocol that can improve fault-tolerance and reduce overhead.
 
 # PROJECT DESCRIPTION: 
-Implement a fault tolerant 2-phase distributed commit(2PC) protocol and use controlled and randomly injected failures to study how the 2PC protocol handles node crashes. Assume one transaction coordinator (TC) and at least two participants in the 2PC protocol. Each node (both the TC and the participants) devises a time-out mechanism when no response is received and transits to either the abort or commit state and implements the operations of node and transaction coordinator failure. 
+Using controlled and randomly injected failures to examine how the fault-tolerant 2-phase distributed commit (2PC) protocol responds to node crashes. Assume that the 2PC protocol has at least two participants and a single transaction coordinator (TC). When no response is received, each node—the TC and the participants—develops a time-out mechanism that executes the node and transaction coordinator failure actions and transitions to either the commit or abort states. 
 
 # STEPS TO EXECUTE THE APPLICATION (IMPLEMENTATION): 
 Step 1: 
